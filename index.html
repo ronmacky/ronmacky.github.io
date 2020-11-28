@@ -1,0 +1,171 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Personal Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+		$("a").on('click', function(event) {
+			if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 800, function(){
+				window.location.hash = hash;
+			});
+			} 
+		});
+		});
+		</script>
+	</head>
+	<body>
+			<header id="header" class="alt">
+				<div class="logo" id="Homepage"></div>
+				<a href="#menu">Menu</a>
+			</header>
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="#Homepage">Home</a></li>
+					<li><a href="#About">About</a></li>
+					<li><a href="#Experience">Experience</a></li>
+					<li><a href="#Skills">Skills</a></li>
+				</ul>
+			</nav>
+			<section id="banner">
+				<div class="inner">
+					<header>
+						<h1>Welcome to my Personal Website</h1>
+					</header>
+					<a href="#main" class="button big scrolly">Learn More</a>
+				</div>
+			</section>
+			<div id="main">
+					<section class="wrapper style1">
+						<div class="inner">
+								<div class="flex flex-2">
+									<div class="col col1">
+										<div class="image round fit">
+											<a href="#" class="link"><img src="images/jm.jpg" alt="" /></a>
+										</div>
+									</div>
+									<div class="col col2" id="About">
+										<h1>About</h1>
+										<h3><indent>Hi, My name is John Mark L. Florendo</h3>
+										<p>I am Currently Taking Bachelor's degree in Information Technology at Quezon City University</p>
+										<h4>Hobbies</h4>
+										<li>Playing Online Games</li>
+										<li>Watching Movies</li>
+										<li>Basketball</li><br><br>
+										<a href="#Experience" class="button" target="">Experience</a>
+									</div>
+								</div>
+						</div>
+					</section>
+					<section class="wrapper style2">
+						<div class="inner">
+							<div class="flex flex-2">
+								<div class="col col2" id="Experience">
+									<h1><a name="middle"></a>Experience</h1>
+									<h3>GREAT DESIGN MATTERS</h3>
+									<p><i>“If I had an hour to solve a problem and my life depended on the solution, I would spend the first 55 minutes determining the proper question to ask, for once I know the proper question, I could solve the problem in less than five minutes.” – Albert Einstein</i></p>
+									<h3>I had the Opportunity to Compete in the world's largest hackathon in Manila called Impact Hackathon 2050</h3>
+									<a href="#Skills" class="button">Skills</a>
+								</div>
+								<div class="col col1 first">
+									<div class="image round fit">
+										<a href="#" class="link"><img src="images/impact.jpg" alt=""></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="wrapper style1">
+						<div class="inner" id="Skills">
+							<header class="align-center">
+								<h2>SKILLS.</h2>
+							</header>
+							<table>
+								<tr>
+								  <td>PHOTOSHOP</td>
+								  <td>
+									<div style='background-color:rgb(247, 182, 99); width:810px'>
+										<CENTER>75%</CENTER>
+									</div>
+								  </td>
+								</tr>
+								<tr>
+								  <td>UX/UI DESIGN</td>
+								  <td>
+									<div style='background-color:rgb(247, 182, 99); width:540px'>
+										<CENTER>40%</CENTER>
+									</div>
+								  </td>
+								</tr>
+								<td>HTML/CSS</td>
+								  <td>
+									<div style='background-color:rgb(247, 182, 99); width:1040px'>
+										<CENTER>90%</CENTER>
+									</div>
+								  </td>
+								</tr>
+								<td>PHP</td>
+								  <td>
+									<div style='background-color:rgb(247, 182, 99); width:580px'>
+										<CENTER>50%</CENTER>
+									</div>
+								  </td>
+								</tr>
+								<td>JAVASCRIPT</td>
+								  <td>
+									<div style='background-color:rgb(247, 182, 99); width:740px'>
+										<CENTER>60%</CENTER>
+									</div>
+								  </td>
+								</tr>
+								<td>JAVA</td>
+								  <td>
+									<div style='background-color:rgb(247, 182, 99); width:1040px'>
+										<CENTER>90%</CENTER>
+									</div>
+								  </td>
+								</tr>
+								<td>PYTHON</td>
+								  <td>
+									<div style='background-color:rgb(247, 182, 99); width:40px'>
+										<CENTER>2%</CENTER>
+									</div>
+								  </td>
+								</tr>
+								<td>C#</td>
+								  <td>
+									<div style='background-color:rgb(247, 182, 99); width:90px'>
+										<CENTER>5%</CENTER>
+									</div>
+								  </td>
+								</tr>
+							  </table>
+						</div>
+					</section>
+			</div>
+			<footer id="footer">
+				<div class="copyright">
+					<ul class="icons">
+						<li><a href="https://twitter.com/macmaculitbako" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="https://web.facebook.com/macckyyy2/" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/macckyyy_/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+					</ul>
+					<p>Copy Right &copy; JM Florendo. All rights reserved.</p>
+				</div>
+			</footer>
+			<script src="assets/js/jquery1.js"></script>
+			<script src="assets/js/jquery2.js"></script>
+			<script src="assets/js/jquery3.js"></script>
+			<script src="assets/js/jquery4.js"></script>
+			<script src="assets/js/jquery5.js"></script>
+			<script src="assets/js/main.js"></script>
+	</body>
+</html>
